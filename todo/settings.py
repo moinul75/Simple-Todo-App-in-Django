@@ -83,6 +83,7 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 # }
 import os
 DATABASE_URL = os.environ.get('DATABASE_URL')
+# DATABASE_URL = 'postgres://taskdb_dqy1_user:lEfrVmcMInTAGLZ86iGHe6RlzRrVm9QF@dpg-cfg12m82i3mg6pakhsgg-a.singapore-postgres.render.com/taskdb_dqy1'
 DATABASES = {'default': dj_database_url.parse(DATABASE_URL)}
 # DATABASES = {
 #     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
